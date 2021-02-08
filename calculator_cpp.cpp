@@ -25,13 +25,13 @@ int main()
 {
     calculator obj;
     int first,second;
-    cout<<"================== Calculator ===================";
+    cout<<"================== Calculator ==================="<<endl;
     cout<<"Input First Number  : ";
     cin>>first;
     cout<<"Input Second Number : ";
     cin>>second;
-    cout<<"What Operation you like to Perform";
-    cout<<"1. Add"<<endl<<"2.Subtract"<<endl<<"3.Multiplication"<<endl<<"4.Division"<<endl;
+    cout<<"What Operation you like to Perform"<<endl;
+    cout<<"1.Add"<<endl<<"2.Subtract"<<endl<<"3.Multiplication"<<endl<<"4.Division"<<endl;
     int opt;
     cin>>opt;
     if (opt==1){
@@ -46,8 +46,9 @@ int main()
     else if (opt==4){
         cout<<"Division of Two Numbers is : "<<obj.divi(first,second);
     }
+    else{
+        cout<<"Wrong Option Selected"<<endl;
+    }
 
     return 0;
 }
-
-
